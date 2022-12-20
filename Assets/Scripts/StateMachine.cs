@@ -13,7 +13,6 @@ public class StateMachine : MovingEntity
 
     public state currentState;
     private Dijkstra Pathfinder;
-    public float maxChaseDistance = 10f;
     List<Node> path = new List<Node>();
     public LayerMask mask;
     public float radiusDetection = 1000;
@@ -135,8 +134,6 @@ public class StateMachine : MovingEntity
                 path.RemoveAt(0);
             }
 
-            if ((currentTarget.position - transform.position).magnitude > maxChaseDistance)
-                ChangeState(state.Normal);
             prevCurrentTarget = currentTarget.position;
             yield return 0;
         }
@@ -150,10 +147,5 @@ public class StateMachine : MovingEntity
             currentTarget = other.transform;
             ChangeState(state.AtacarEnemigo);
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(transform.position, maxChaseDistance);
     }
 }

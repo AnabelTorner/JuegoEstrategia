@@ -703,7 +703,7 @@ MonoBehaviour:
   maxChaseDistance: 10
   mask:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 64
   radiusDetection: 1000
   targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4391595532213546557

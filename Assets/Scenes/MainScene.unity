@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2365d7ae2cb3a864790ee9d6f285ee0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoAparicion: 5
+  tiempoAparicion: 0.5
   bomba: {fileID: 7636606171733959642, guid: 6bbc9c680c95ac14f8e01cbe6c7c74a5, type: 3}
   tanque: {fileID: 9061308855691115329, guid: dc8cb874f3e004d4b96c9060a0ca5f9d, type: 3}
   mele: {fileID: 7000833441767632261, guid: 9bdbefd25b7fc7444b96d61e7ada5285, type: 3}

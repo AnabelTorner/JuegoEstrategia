@@ -10,7 +10,6 @@ public class SpawnEnemies : MonoBehaviour
     public GameObject tanque;
     public GameObject mele;
     public GameObject mago;
-    public GameObject arquero;
 
     public GameObject posicionTorreCentral;
     public GameObject posicionTorreIzq;
@@ -29,7 +28,6 @@ public class SpawnEnemies : MonoBehaviour
                 case 1: invocarTanque(); break;
                 case 2: invocarMele(); break;
                 case 3: invocarMago(); break;
-                case 4: invocarArquero(); break;
             }
             timer = 0;
         }
@@ -76,17 +74,6 @@ public class SpawnEnemies : MonoBehaviour
             case 0: Instantiate(mago, posicionTorreCentral.transform); break;
             case 1: Instantiate(mago, posicionTorreIzq.transform); break;
             case 2: Instantiate(mago, posicionTorreDer.transform); break;
-        }
-    }
-
-    //Arquero
-    public void invocarArquero()
-    {
-        switch (Random.Range(0, 3))
-        {
-            case 0: Instantiate(arquero, posicionTorreCentral.transform); break;
-            case 1: Instantiate(arquero, posicionTorreIzq.transform); break;
-            case 2: Instantiate(arquero, posicionTorreDer.transform); break;
         }
     }
 }
