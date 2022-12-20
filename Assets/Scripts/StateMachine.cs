@@ -25,7 +25,6 @@ public class StateMachine : MovingEntity
     void Start()
     {
         Pathfinder = GameObject.Find("Dijkstra").GetComponent<Dijkstra>();
-        ChooseTarget();
         GetPath();
         StartCoroutine(FSM());
         Debug.Log("Current State -> " + currentState);
@@ -53,6 +52,7 @@ public class StateMachine : MovingEntity
     }
     void GetPath()
     {
+        ChooseTarget();
         path = Pathfinder.Algorithm(transform.position, targetPosition);
     }
     IEnumerator FSM()
@@ -84,14 +84,14 @@ public class StateMachine : MovingEntity
 
     IEnumerator Normal()
     {
-        while (currentState == state.Normal && path.Count > 0)
+        while (currentState == state.Normal && path.Count > 1)
         {
-            targetPosition = path[0].position;
+            targetPosition = path[1].position;
             towardsTarget = targetPosition - transform.position;
             MoveTowards(towardsTarget.normalized);
 
             if (towardsTarget.magnitude < 1f)
-                path.RemoveAt(0);
+                GetPath();
 
             Debug.DrawLine(transform.position, targetPosition, Color.green);
             yield return 0;

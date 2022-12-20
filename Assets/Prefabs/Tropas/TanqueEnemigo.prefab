@@ -158,7 +158,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061308855691115329}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -166,7 +166,7 @@ Transform:
   - {fileID: 9064718432966359907}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &8976004521831173225
 Animator:
   serializedVersion: 3
@@ -198,15 +198,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
+  movementSpeed: 0.7
   rotationSpeed: 1
   currentState: 0
   maxChaseDistance: 10
   mask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
   radiusDetection: 1000
-  targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 24.7, y: 0.7, z: -16.3}
 --- !u!1 &9061315667826405013
 GameObject:
   m_ObjectHideFlags: 0

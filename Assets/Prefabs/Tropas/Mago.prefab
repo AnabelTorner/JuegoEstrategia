@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 4441979172631181883}
   - component: {fileID: 4400647260051321719}
   - component: {fileID: -1627859343562449240}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,9 +703,9 @@ MonoBehaviour:
   maxChaseDistance: 10
   mask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 16392
   radiusDetection: 1000
-  targetPosition: {x: 24.7, y: 0.7, z: 19.7}
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4391595532213546557
 GameObject:
   m_ObjectHideFlags: 0

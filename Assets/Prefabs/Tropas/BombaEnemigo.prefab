@@ -319,6 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7634224350394615396}
   - component: {fileID: 7543082264769188278}
+  - component: {fileID: 4812289154276275652}
   m_Layer: 0
   m_Name: BombaEnemigo
   m_TagString: Untagged
@@ -333,7 +334,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7636606171733959642}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -341,7 +342,7 @@ Transform:
   - {fileID: 7634397439970034280}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &7543082264769188278
 Animator:
   serializedVersion: 3
@@ -361,6 +362,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4812289154276275652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636606171733959642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 2.5
+  rotationSpeed: 2
+  currentState: 0
+  maxChaseDistance: 10
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+  radiusDetection: 1000
+  targetPosition: {x: 1.7, y: 0.7, z: -22.5}
 --- !u!1 &7636816748522989530
 GameObject:
   m_ObjectHideFlags: 0

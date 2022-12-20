@@ -352,7 +352,8 @@ GameObject:
   - component: {fileID: 8973737117825696106}
   - component: {fileID: 9066642298217738152}
   - component: {fileID: 9035161737429937654}
-  m_Layer: 0
+  - component: {fileID: 4004899704011856417}
+  m_Layer: 13
   m_Name: ArqueroEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +367,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8971594762277698982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
@@ -374,7 +375,7 @@ Transform:
   - {fileID: 8977586938517832746}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &9066642298217738152
 Animator:
   serializedVersion: 3
@@ -408,6 +409,27 @@ CapsuleCollider:
   m_Height: 1.8772755
   m_Direction: 1
   m_Center: {x: 0, y: 0.99, z: 0}
+--- !u!114 &4004899704011856417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971594762277698982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 2
+  rotationSpeed: 1
+  currentState: 0
+  maxChaseDistance: 10
+  mask:
+    serializedVersion: 2
+    m_Bits: 1088
+  radiusDetection: 1000
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8971595211578400592
 GameObject:
   m_ObjectHideFlags: 0

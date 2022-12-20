@@ -10,11 +10,6 @@ public class energyScript : MonoBehaviour
     public float energy;
     public int aumento;
 
-    // Descomentar
-    private void Start()
-    {
-        energy = 10000;
-    }
     void Update()
     {
         if (energy < 100)
