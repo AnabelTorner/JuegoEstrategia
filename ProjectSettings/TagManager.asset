@@ -12,19 +12,19 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Torre
+  - TorreEnemigo
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TorreAliados
+  - BombaAliado
+  - TanqueAliado
+  - MeleAliado
+  - MagoAliado
+  - ArqueroAliado
+  - MagoEnemigo
+  - ArqueroEnemigo
+  - MeleEnemigo
+  - BombaEnemigo
   - 
   - 
   - 

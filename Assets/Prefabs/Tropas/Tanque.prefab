@@ -199,14 +199,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.7
-  rotationSpeed: 0.8
+  rotationSpeed: 1
   currentState: 0
   maxChaseDistance: 10
   mask:
     serializedVersion: 2
     m_Bits: 8
   radiusDetection: 1000
-  targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: -21.3, y: 0.7, z: 19.7}
 --- !u!1 &9061315667826405013
 GameObject:
   m_ObjectHideFlags: 0

@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 4441979172631181883}
   - component: {fileID: 4400647260051321719}
   - component: {fileID: -1627859343562449240}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MagoEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +643,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4391591024783336723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
@@ -651,7 +651,7 @@ Transform:
   - {fileID: 4388451174551639037}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &4441979172631181883
 Animator:
   serializedVersion: 3
@@ -697,15 +697,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
-  rotationSpeed: 1
+  movementSpeed: 1.5
+  rotationSpeed: 1.5
   currentState: 0
   maxChaseDistance: 10
   mask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 576
   radiusDetection: 1000
-  targetPosition: {x: 1.7, y: 0.7, z: 25.5}
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4391595532213546557
 GameObject:
   m_ObjectHideFlags: 0

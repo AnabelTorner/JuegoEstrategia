@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 7000833441767600613}
   - component: {fileID: 7000833441775050297}
   - component: {fileID: -6823870623873417863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mele
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1000,9 +1000,9 @@ MonoBehaviour:
   maxChaseDistance: 10
   mask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 8200
   radiusDetection: 1000
-  targetPosition: {x: 24.7, y: 0.7, z: 19.7}
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7000833441767632263
 GameObject:
   m_ObjectHideFlags: 0
