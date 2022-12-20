@@ -2143,12 +2143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2365d7ae2cb3a864790ee9d6f285ee0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoAparicion: 0.5
+  tiempoAparicion: 5
   bomba: {fileID: 7636606171733959642, guid: 6bbc9c680c95ac14f8e01cbe6c7c74a5, type: 3}
   tanque: {fileID: 9061308855691115329, guid: dc8cb874f3e004d4b96c9060a0ca5f9d, type: 3}
   mele: {fileID: 7000833441767632261, guid: 9bdbefd25b7fc7444b96d61e7ada5285, type: 3}
   mago: {fileID: 4391591024783336723, guid: f853660d786210a4995630dd568e6413, type: 3}
-  arquero: {fileID: 8971594762277698982, guid: cf4e130228807904fb3c1aa0b09d1ced, type: 3}
   posicionTorreCentral: {fileID: 700204449}
   posicionTorreIzq: {fileID: 1271735751}
   posicionTorreDer: {fileID: 1222170393}
